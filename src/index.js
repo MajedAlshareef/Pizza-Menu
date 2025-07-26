@@ -467,7 +467,13 @@ function Dashboard({ pizzas, addPizza, deletePizza, toggleSoldOut, onLogout }) {
 }
 
 function Footer() {
-  return <p className="footer">All rights reserved &#169;</p>;
+  return (
+    <>
+      {" "}
+      <p className="footer"> All rights reserved &#169;</p>{" "}
+      <Order openHour={'8:00'} CloesHour={'13:00'} />
+    </>
+  );
 }
 function Menu({ pizzas }) {
   return (
